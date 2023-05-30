@@ -106,3 +106,56 @@ body {
     background-color: <?php echo generateRandomColor(); ?>;
 }
    */
+
+   .container {
+    background-color: #888;
+    color: #fff;
+}
+h1 {
+  background-color: #000;
+  color: #fff;
+}
+.info {
+  background-color: #ccc;
+  color: #000;
+}
+.error {
+  background-color: #000;
+  color: red;
+}
+form {
+  background-color: #ccc;
+  color: #000;
+}
+
+textarea {
+  background-color: #fff;
+  color: #000;
+}
+article {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/*  */
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.container {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+form {
+  font-size: 14px;
+}
+a{
+  color:greenyellow;
+}
