@@ -102,33 +102,52 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['postButton'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Large Social</title>
+    <title>This your social</title>
     <link href="bigsocail.css" rel="stylesheet">
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
 
-    <div class="sidenav">
+    <!-- <div class="sidenav">
         <div class="trends">
             <h2>Popular Trends</h2>
             <div class="trend-item">
-                <a href="#">#Sports</a>
+                <a href="#">#Life</a>
             </div>
             <div class="trend-item">
-                <a href="#">#Travel</a>
+                <a href="#">#Women</a>
             </div>
             <div class="trend-item">
-                <a href="#">#Food</a>
+                <a href="#">#Cars</a>
             </div>
             <div class="trend-item">
-                <a href="#">#Music</a>
+                <a href="#"><div id="Friends"></div></a>
             </div>
-        </div>
+        </div> -->
+        <div class="box">
+        <?php
+        // Get the latest trend hashtag
+        $latestTrend = "#latesttrend";
+        echo $latestTrend;
+        ?>
+         </div>
     </div>
-    <h1>Welcome to Large Social</h1>
+    <h1>Welcome to This is your Social</h1>
 
     <div class="info">
-        This website is designed for older users. Enjoy the larger font size!
+        This is your social for fun!! <br />
+        It might ask your number.
     </div>
 
 
@@ -185,6 +204,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['postButton'])) {
         }
     }
     ?>
+
+      <!-- <?php
+    // Function to generate a random color
+    function generateRandomColor() {
+        $letters = '0123456789ABCDEF';
+        $color = '#';
+        for ($i = 0; $i < 6; $i++) {
+            $color .= $letters[rand(0, 15)];
+        }
+        return $color;
+    }
+    ?> -->
 
     <?php
     mysqli_close($databaseConnection);

@@ -31,7 +31,7 @@ body {
   }
   
   .trends {
-    background-color: #f1f1f1;
+    background-color: #ec0d0d;
     padding: 10px;
   }
   
@@ -53,7 +53,7 @@ body {
   }
   
   input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #5be4ee;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -61,7 +61,7 @@ body {
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0def18;
   }
   
   /* Article Styles */
@@ -92,6 +92,17 @@ body {
     .sidenav {
       float: none;
       width: 100%;
+
+      background-color: #ed8d06;
+      border-radius: 10px;
+      transition: all 0.3s 
+      ease-in-out;
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     }
   }
-  
+
+  /* body {
+    background-color: <?php echo generateRandomColor(); ?>;
+}
+   */
